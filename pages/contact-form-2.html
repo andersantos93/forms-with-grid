@@ -42,7 +42,48 @@
         <li id="last-item"><a href="./contact-form-4.html">Contact 4</a></li>
       </ul>
     </nav>
-    <main></main>
+    <main>
+      <form id="contact-form-2" action="/submit-path" method="post">
+        <picture>
+          <img id="contact-form-2-picture" src="../assets/contact-us-2.png" />
+        </picture>
+
+        <h1>Contact Us</h1>
+
+        <div id="full-name-field">
+          <label for="full-name-input">Full Name</label>
+          <input type="text" id="full-name-input" name="full-name" required />
+        </div>
+
+        <div id="email-field">
+          <label for="email-input">E-mail</label>
+          <input type="text" id="email-input" name="email" required />
+        </div>
+
+        <div id="message-field">
+          <label for="message-input">Message</label>
+          <textarea id="message-field" name="message" required></textarea>
+        </div>
+
+        <button id="submit" type="submit">Contact Us</button>
+
+        <div id="email-contact">
+          <h4>Contact</h4>
+          <span>hi@green.com</span>
+        </div>
+
+        <div id="location">
+          <h4>Based in</h4>
+          <span>New York,<br />California, Ohio</span>
+        </div>
+
+        <div id="social-medias">
+          <picure>
+            <img src="../assets/social-medias.png" />
+          </picure>
+        </div>
+      </form>
+    </main>
     <footer>
       <nav class="footer-nav" aria-label="Footer navigation">
         <ul>

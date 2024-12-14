@@ -1,0 +1,115 @@
+#contact-form-2 {
+  display: grid;
+  padding: 50px;
+  background-color: #f2ede6;
+  grid-template-areas:
+    "picture heading heading heading"
+    "picture fullname fullname contact"
+    "picture email email location"
+    "picture message message location"
+    "picture submit submit social-media";
+}
+
+#contact-form-2 picture {
+  display: contents;
+}
+
+#contact-form-2-picture {
+  grid-area: picture;
+}
+
+#full-name-field {
+  grid-area: fullname;
+}
+
+#email-field {
+  grid-area: email;
+}
+
+#message-field {
+  grid-area: message;
+  resize: none;
+  font-family: Helvetica, sans-serif;
+}
+
+#email-contact {
+  grid-area: contact;
+  align-self: center;
+  color: #00054b;
+}
+
+#location {
+  grid-area: location;
+  align-self: flex-start;
+  margin-top: 40px;
+  color: #00054b;
+}
+
+#social-medias {
+  grid-area: social-media;
+  margin-top: 4px;
+}
+
+#contact-form-2 h1 {
+  grid-area: heading;
+  font-size: 50px;
+  font-weight: normal;
+  font-family: "Playfair Display";
+  color: #00054b;
+  text-align: left;
+}
+
+h1,
+#full-name-field,
+#email-field,
+#message-field {
+  align-self: center;
+}
+
+#contact-form-2 label,
+#contact-form-2 input,
+#contact-form-2 textarea {
+  background-color: #f2ede6;
+  width: 100%;
+  font-size: 16px;
+  display: block;
+  text-align: left;
+}
+
+#contact-form-2 label {
+  opacity: 0.4;
+}
+
+#contact-form-2 input,
+#contact-form-2 textarea {
+  padding-top: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #00054b;
+}
+
+#contact-form-2 input:focus,
+#contact-form-2 textarea:focus {
+  outline: none;
+}
+
+#submit {
+  background-color: #00054b;
+  color: #fff;
+  width: 180px;
+  height: 35px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+#email-contact,
+#location {
+  text-align: left;
+  margin-left: 100px;
+}
+
+#social-medias img {
+  width: 150px;
+}

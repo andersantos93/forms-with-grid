@@ -6,11 +6,15 @@
   list-style: none;
 }
 
+body {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
 .header-nav {
   display: flex;
   justify-content: space-between;
   padding: 32px 32px;
-  min-width: 100vw;
   min-height: 80px;
   background: #1f1f1f;
 }
@@ -80,14 +84,74 @@ nav ul li a:active {
   transform: translateY(0);
 }
 
-/* Main content */
-main {
-  text-align: center;
-  margin: 10px;
+#contact-form {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  padding: 100px;
+  background-color: #404cec;
+  grid-template-areas:
+    "heading heading heading heading"
+    "paragraph paragraph paragraph paragraph"
+    "name name email email"
+    "phonenumber phonenumber phonenumber phonenumber"
+    "submit submit submit submit";
 }
 
-main h2 {
-  margin-bottom: 16px;
+#contact-form h1 {
+  grid-area: heading;
+  color: white;
+}
+
+#contact-form p {
+  grid-area: paragraph;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#name-field {
+  grid-area: name;
+}
+
+#email-field {
+  grid-area: email;
+}
+
+#phone-number-field {
+  grid-area: phonenumber;
+}
+
+#submit {
+  grid-area: submit;
+  color: #394ae8;
+  font-weight: bold;
+  margin-top: 30px;
+  grid-column: 1 / 2;
+}
+
+#contact-form input,
+#contact-form button {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+#name-field input,
+#email-field input,
+#phone-number-field input {
+  height: 43px;
+  padding: 12px;
+}
+
+::placeholder {
+  opacity: 0.8;
+}
+
+#submit {
+  height: 47px;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 /* Footer */

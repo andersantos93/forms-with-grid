@@ -1,4 +1,4 @@
-This project contains an example of how to use CSS Grid to design flexibe responsive web pages.
+This project contains some examples of how to use CSS Grid to design flexibe responsive web pages.
 
 Prepared by web development Anderson Santos as part of his lessons on Web Development.
 

@@ -6,11 +6,12 @@ body {
   display: grid;
   padding: 30px;
   margin: 30px;
+  gap: 15px;
   border: 1px solid #eddede;
   border-radius: 10px;
-  gap: 15px;
   background-color: #fcfcfc;
   font-family: Calibri;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-template-areas:
     "heading heading heading heading"
     "firstname firstname lastname lastname"
@@ -64,12 +65,14 @@ body {
 #contact-form-4 #submit {
   grid-area: submit;
   margin-top: 10px;
+  width: 150px;
   height: 35px;
   background-color: #1b52df;
   border: none;
   border-radius: 5px;
   color: #fff;
   font-size: 16px;
+  justify-self: end;
 }
 
 #first-name-field label,
@@ -109,6 +112,20 @@ body {
   margin-bottom: 10px;
 }
 
+#first-name-field,
+#email-field,
+#city-field,
+#start-date-field {
+  margin-right: 20px;
+}
+
+#last-name-field,
+#job-role-field,
+#zip-field,
+#upload-cv-field {
+  margin-left: 20px;
+}
+
 #contact-form-4 input,
 select,
 textarea {
@@ -122,12 +139,9 @@ textarea {
   height: 100px;
 }
 
-#upload-cv-field label {
-  margin-left: 10px;
-}
-
 #contact-form-4 input[type="file"] {
   border: none;
+  padding-left: 0;
 }
 
 #address-field {

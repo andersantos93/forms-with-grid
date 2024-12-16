@@ -42,10 +42,15 @@
 
 #country-code-select {
   grid-area: countrycode;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }
 
 #phone-number-input {
   grid-area: phonenumberinput;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  grid-column: 2/20;
 }
 
 #available-date-field {

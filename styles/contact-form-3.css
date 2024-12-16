@@ -1,6 +1,14 @@
+body {
+  background-color: #e0dcdc;
+}
+
 #contact-form-3 {
   display: grid;
-  padding: 50px;
+  padding: 30px;
+  margin: 30px;
+  border: none;
+  background-color: #fff;
+  border-radius: 10px;
   gap: 14px;
   grid-template-areas:
     "heading heading heading heading"

@@ -1,7 +1,15 @@
+body {
+  background-color: #b0d4cc;
+}
+
 #contact-form-2 {
   display: grid;
   padding: 50px;
   background-color: #f2ede6;
+  padding: 30px;
+  margin: 30px;
+  border: 1px solid #eddede;
+  border-radius: 10px;
   grid-template-areas:
     "picture heading heading heading"
     "picture fullname fullname contact"

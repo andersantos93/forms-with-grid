@@ -43,7 +43,74 @@
         <li id="last-item"><a href="./contact-form-4.html">Contact 4</a></li>
       </ul>
     </nav>
-    <main></main>
+    <main>
+      <form id="contact-form-3" action="/submit-path" method="post">
+        <h1>Book your appointment now</h1>
+        <p>So our team can reach out to you on time</p>
+
+        <div id="full-name-field">
+          <label for="full-name-input">Full Name</label>
+          <input
+            type="text"
+            id="full-name-input"
+            name="full-name"
+            placeholder="eg: John Doe"
+            required
+          />
+        </div>
+
+        <div id="email-field">
+          <label for="email-input">Email</label>
+          <input
+            type="email"
+            id="email-input"
+            name="email"
+            placeholder="eg: john@email.com"
+            required
+          />
+        </div>
+
+        <div id="phone-number-field">
+          <label for="country-code-select">Phone Number</label>
+          <select id="country-code-select" name="country-code">
+            <option value="971">+971</option>
+            <option value="1">+1</option>
+            <option value="55">+55</option>
+          </select>
+          <input
+            type="text"
+            id="phone-number-input"
+            name="phone-number"
+            placeholder="543210987"
+            required
+          />
+        </div>
+
+        <div id="available-date-field">
+          <label for="available-date-select">Available Date:</label>
+          <select id="available-date-select" name="available-date">
+            <option value="">Select</option>
+            <option value="2024-12-20">2024/12/20</option>
+            <option value="2024-12-21">2024/12/21</option>
+            <option value="2024-12-22">2024/12/22</option>
+          </select>
+        </div>
+
+        <div id="message-field">
+          <label for="message-input">Share Your Message</label>
+          <textarea
+            id="message-field"
+            name="message"
+            placeholder="Message"
+            required
+          ></textarea>
+        </div>
+
+        <button id="submit" type="submit">
+          <span>Book Now</span> <img src="../assets/arrow-right.png" />
+        </button>
+      </form>
+    </main>
     <footer>
       <nav class="footer-nav" aria-label="Footer navigation">
         <ul>

@@ -28,7 +28,6 @@
 
 #message-field {
   grid-area: message;
-  resize: none;
   font-family: Helvetica, sans-serif;
 }
 
@@ -112,4 +111,8 @@ h1,
 
 #social-medias img {
   width: 150px;
+}
+
+#message-input {
+  resize: none;
 }

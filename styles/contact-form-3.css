@@ -1,0 +1,145 @@
+#contact-form-3 {
+  display: grid;
+  padding: 50px;
+  gap: 14px;
+  grid-template-areas:
+    "heading heading heading heading"
+    "paragraph paragraph paragraph paragraph"
+    "fullname fullname available-date available-date"
+    "email email message message"
+    "phonenumber phonenumber message message"
+    ". . . submit";
+}
+
+#contact-form-3 h1 {
+  grid-area: heading;
+}
+
+#contact-form-3 p {
+  grid-area: paragraph;
+  margin-bottom: 20px;
+}
+
+#full-name-field {
+  grid-area: fullname;
+}
+
+#email-field {
+  grid-area: email;
+}
+
+#phone-number-field {
+  grid-area: phonenumber;
+  display: inline-grid;
+  grid-template-areas:
+    "phonenumberlabel phonenumberlabel phonenumberlabel phonenumberlabel"
+    "countrycode phonenumberinput phonenumberinput phonenumberinput";
+}
+
+#phone-number-field label {
+  grid-area: phonenumberlabel;
+}
+
+#country-code-select {
+  grid-area: countrycode;
+}
+
+#phone-number-input {
+  grid-area: phonenumberinput;
+}
+
+#available-date-field {
+  grid-area: available-date;
+}
+
+#message-field {
+  grid-area: message;
+  height: 121px;
+  resize: none;
+}
+
+#submit {
+  grid-area: submit;
+  color: #fff;
+  background-color: #3b82f6;
+  justify-self: end;
+  margin-top: 30px;
+  padding: 4px;
+  width: 130px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  text-align: start;
+  cursor: pointer;
+}
+
+#contact-form-3 h1,
+#contact-form-3 p,
+#full-name-field label,
+#email-field label,
+#phone-number-field label,
+#available-date-field label,
+#message-field label {
+  text-align: left;
+}
+
+#full-name-field label,
+#full-name-field input,
+#email-field label,
+#email-field input,
+#phone-number-field label,
+#available-date-field label,
+#available-date-field select,
+#message-field label,
+#message-field textarea {
+  display: block;
+  width: 100%;
+}
+
+#contact-form-3 label {
+  color: #111827;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#contact-form-3 input,
+select,
+textarea {
+  background: #eef4ff;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#contact-form-3 input:focus,
+#contact-form-3 textarea:focus {
+  outline: none;
+}
+
+#contact-form-3 ::placeholder {
+  opacity: 0.6;
+}
+
+#contact-form-3 #available-date-select {
+  font-weight: bold;
+}
+
+#contact-form-3 textarea::placeholder {
+  opacity: inherit;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#submit span {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+#submit img {
+  width: 16px;
+  position: absolute;
+}

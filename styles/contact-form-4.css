@@ -1,0 +1,135 @@
+body {
+  background-color: #f8f4f4;
+}
+
+#contact-form-4 {
+  display: grid;
+  padding: 30px;
+  margin: 30px;
+  border: 1px solid #eddede;
+  border-radius: 10px;
+  gap: 15px;
+  background-color: #fcfcfc;
+  font-family: Calibri;
+  grid-template-areas:
+    "heading heading heading heading"
+    "firstname firstname lastname lastname"
+    "email email jobrole jobrole"
+    "address address address address"
+    "city city zip zip"
+    "startdate startdate uploadfile uploadfile"
+    ". . . submit";
+}
+
+#contact-form-4 h2 {
+  grid-area: heading;
+}
+
+#contact-form-4 #first-name-field {
+  grid-area: firstname;
+}
+
+#contact-form-4 #last-name-field {
+  grid-area: lastname;
+}
+
+#contact-form-4 #email-field {
+  grid-area: email;
+}
+
+#contact-form-4 #job-role-field {
+  grid-area: jobrole;
+}
+
+#contact-form-4 #address-field {
+  grid-area: address;
+}
+
+#contact-form-4 #city-field {
+  grid-area: city;
+}
+
+#contact-form-4 #zip-field {
+  grid-area: zip;
+}
+
+#contact-form-4 #start-date-field {
+  grid-area: startdate;
+}
+
+#contact-form-4 #upload-cv-field {
+  grid-area: uploadfile;
+}
+
+#contact-form-4 #submit {
+  grid-area: submit;
+  margin-top: 10px;
+  height: 35px;
+  background-color: #1b52df;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+
+#first-name-field label,
+#first-name-field input,
+#last-name-field label,
+#last-name-field input,
+#email-field label,
+#email-field input,
+#job-role-field label,
+#job-role-field select,
+#address-field label,
+#address-field textarea,
+#city-field label,
+#city-field input,
+#zip-field label,
+#zip-field input,
+#start-date-field label,
+#start-date-field select,
+#upload-cv-field label,
+#upload-cv-field input {
+  display: block;
+  width: 100%;
+}
+
+#contact-form-4 h2,
+#first-name-field label,
+#last-name-field label,
+#email-field label,
+#email-field label,
+#job-role-field label,
+#address-field label,
+#city-field label,
+#zip-field label,
+#start-date-field label,
+#upload-cv-field label {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#contact-form-4 input,
+select,
+textarea {
+  height: 35px;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#contact-form-4 textarea {
+  height: 100px;
+}
+
+#upload-cv-field label {
+  margin-left: 10px;
+}
+
+#contact-form-4 input[type="file"] {
+  border: none;
+}
+
+#address-field {
+  resize: none;
+}

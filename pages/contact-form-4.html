@@ -43,7 +43,96 @@
         <li id="last-item"><a href="#" id="current-page">Contact 4</a></li>
       </ul>
     </nav>
-    <main></main>
+    <main>
+      <form id="contact-form-4" action="/submit-path" method="post">
+        <h2>Job Application (Web)</h2>
+
+        <div id="first-name-field">
+          <label for="first-name-input">First Name</label>
+          <input
+            type="text"
+            id="first-name-input"
+            name="first-name"
+            placeholder="Enter First Name"
+            required
+          />
+        </div>
+
+        <div id="last-name-field">
+          <label for="last-name-input">Last Name</label>
+          <input
+            type="text"
+            id="last-name-input"
+            name="last-name"
+            placeholder="Enter Last Name"
+            required
+          />
+        </div>
+
+        <div id="email-field">
+          <label for="email-input">Email</label>
+          <input
+            type="email"
+            id="email-input"
+            name="email"
+            placeholder="Enter Email"
+            required
+          />
+        </div>
+
+        <div id="job-role-field">
+          <label for="job-role-select">Job Role</label>
+          <select id="job-role-select" name="job-role">
+            <option value="front-end">Frontend Developer</option>
+            <option value="back-end">Backend Developer</option>
+            <option value="qa">Quality Assurance</option>
+          </select>
+        </div>
+
+        <div id="address-field">
+          <label for="address-input">Enter Address</label>
+          <textarea id="address-field" name="address" required></textarea>
+        </div>
+
+        <div id="city-field">
+          <label for="city-input">City</label>
+          <input
+            type="city"
+            id="city-input"
+            name="city"
+            placeholder="Enter City"
+            required
+          />
+        </div>
+
+        <div id="zip-field">
+          <label for="zip-input">Zip</label>
+          <input
+            type="zip"
+            id="zip-input"
+            name="zip"
+            placeholder="Enter Zip Code"
+            required
+          />
+        </div>
+
+        <div id="start-date-field">
+          <label for="start-date-select">Start Date:</label>
+          <select id="start-date-select" name="start-date" required>
+            <option value="2024-12-30">30/12/2024</option>
+            <option value="2024-12-31">31/12/2024</option>
+            <option value="2025-01-01">01/01/2025</option>
+          </select>
+        </div>
+
+        <div id="upload-cv-field">
+          <label for="upload-cv-file">Upload Your CV</label>
+          <input type="file" id="upload-cv-file" name="cv" required />
+        </div>
+
+        <button id="submit" type="submit">Apply Now</button>
+      </form>
+    </main>
     <footer>
       <nav class="footer-nav" aria-label="Footer navigation">
         <ul>
